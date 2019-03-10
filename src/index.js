@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import Root from './Root';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 
 const app = (
   <Root>
