@@ -16,13 +16,20 @@ const CountName = styled.div`
     font-size: 1.1rem;
     letter-spacing: 0.07rem;
     ${media.lessThan("phone")`
-      font-size: 1rem;
+      font-size: .9rem;
       letter-spacing: 0.01rem;
     `};
     a {
       color: #2dbfbe;
     }
   }
+`;
+
+const CountNumber = styled.span`
+  font-size: 1.1rem;
+  ${media.lessThan("phone")`
+      font-size: .9rem;
+    `};
 `;
 
 const countBox = props => {
@@ -36,7 +43,7 @@ const countBox = props => {
         </span>
       </CountName>
       <CountIcon {...props}>
-        <span>{count}</span>
+        <CountNumber>{count}</CountNumber>
       </CountIcon>
     </Wrapper>
   );
