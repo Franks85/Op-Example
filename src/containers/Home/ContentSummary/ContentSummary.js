@@ -28,7 +28,7 @@ class ContentSummary extends Component {
                 style={{ height: "30%" }}
                 className="align-items-center"
               >
-                <Col xs="6" md={{ size: 5 }}>
+                <Col xs="6" md='5'>
                   <CountBox
                     link
                     count="7.943"
@@ -36,7 +36,7 @@ class ContentSummary extends Component {
                     right
                   />
                 </Col>
-                <Col xs="6" md={{ size: 5 }} className="mx-auto">
+                <Col xs="6" md='5' className="mx-auto">
                   <CountBox
                     link
                     count="13.929"
