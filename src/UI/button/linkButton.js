@@ -4,7 +4,7 @@ import { Row, Col } from "reactstrap";
 
 const Link = styled.a`
     letter-spacing: .1rem;
-    padding: 1rem .5rem;
+    padding: .5rem;
 `;
 
 const linkButton = props => {
