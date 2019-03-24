@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const CountName = styled.div`
-  margin-right: ${props => props.right ? '1.5rem' : '0'};
+  margin-right: ${props => (props.right ? "1.5rem" : "0")};
   span {
     font-size: 1.1rem;
     letter-spacing: 0.07rem;

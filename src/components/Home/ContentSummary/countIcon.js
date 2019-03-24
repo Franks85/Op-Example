@@ -5,7 +5,7 @@ const Icon = styled.div`
   width: 4.5rem;
   height: 2.8rem;
   position: relative;
-  background-color: ${props => props.link ? '#2dbfbe' : props.text ? '#c3bb5e' : props.bg};
+  background-color: ${props => props.link ? "#2dbfbe" : props.text ? "#c3bb5e" : props.bg};
   border-radius: 5px;
   text-align: center;
   &:before {
@@ -15,7 +15,7 @@ const Icon = styled.div`
     right: ${props => (props.right ? "100%" : "")};
     left: ${props => (props.bLeft ? "100%" : "")};
     border-top: 12px solid transparent;
-    border-right: ${props => props.right ? '15px solid #2dbfbe' : ''};
+    border-right: ${props => (props.right ? "15px solid #2dbfbe" : "")};
     border-left: ${props => (props.bLeft ? `15px solid ${props.bg}` : "")};
     border-bottom: 12px solid transparent;
     border-radius: 2px;

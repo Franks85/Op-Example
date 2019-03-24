@@ -1,25 +1,25 @@
 export const navLinkLeft = [
   {
-    title: "Chi siamo",
+    title: "About us",
     href: "/about"
   },
   {
-    title: "Aziende",
+    title: "Companies",
     href: "/companies"
   },
   {
-    title: "Lotti",
+    title: "Contracts",
     href: "/contracts"
   },
   {
-    title: "Comunicazioni",
+    title: "Publications",
     href: "/publications"
   }
 ];
 
 export const navLinkRight = [
   {
-    title: "Area S.A.",
+    title: "S.A. Login",
     href: "/login"
   }
 ];

@@ -24,29 +24,19 @@ class ContentSummary extends Component {
           </Col>
           <Col lg="6">
             <SummaryBox>
-              <Row
-                style={{ height: "30%" }}
-                className="align-items-center"
-              >
-                <Col xs="6" md='5'>
-                  <CountBox
-                    link
-                    count="7.943"
-                    name="Aziende"
-                    right
-                  />
+              <Row style={{ height: "30%" }} className="align-items-center">
+                <Col xs="6" md="5">
+                  <CountBox link count="7.943" name="Companies" right />
                 </Col>
-                <Col xs="6" md='5' className="mx-auto">
-                  <CountBox
-                    link
-                    count="13.929"
-                    name="Lotti"
-                    right
-                  />
+                <Col xs="6" md="5" className="mx-auto">
+                  <CountBox link count="13.929" name="Contracts" right />
                 </Col>
               </Row>
-              <Row style={{ height: "70%" }} className="text-center justify-content-center ">
-                <Col lg='3' xs='4'>
+              <Row
+                style={{ height: "70%" }}
+                className="text-center justify-content-center "
+              >
+                <Col lg="3" xs="4">
                   <Row
                     style={{ height: "50%" }}
                     className="align-items-center justify-content-center"
@@ -54,7 +44,7 @@ class ContentSummary extends Component {
                     <CountBox
                       text
                       count="443K €"
-                      name="Aggiudicati"
+                      name="Awarded"
                       noBorder
                       vertical
                     />
@@ -67,16 +57,16 @@ class ContentSummary extends Component {
                     <CountBox
                       text
                       count="31.9K €"
-                      name="Medio"
+                      name="Average"
                       noBorder
                       vertical
                     />
                   </Row>
                 </Col>
                 <Col xs="3" className="align-self-center">
-                  <h4 className="text-dark">Importi</h4>
+                  <h4 className="text-dark">Amounts</h4>
                 </Col>
-                <Col lg='3' xs='4' >
+                <Col lg="3" xs="4">
                   <Row
                     style={{ height: "50%" }}
                     className="align-items-center justify-content-center"
@@ -84,7 +74,7 @@ class ContentSummary extends Component {
                     <CountBox
                       text
                       count="238K €"
-                      name="Liquidati"
+                      name="Payed"
                       noBorder
                       vertical
                     />
@@ -97,7 +87,7 @@ class ContentSummary extends Component {
                     <CountBox
                       text
                       count="17.1K €"
-                      name="Medio"
+                      name="Average"
                       noBorder
                       vertical
                     />

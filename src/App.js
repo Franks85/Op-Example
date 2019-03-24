@@ -3,20 +3,24 @@ import { BrowserRouter as Router } from "react-router-dom";
 import BaseRouter from "./routes";
 import Header from './containers/Header/Header'
 import Footer from './components/footer/footer'
+import styled from "styled-components";
 
+const Wrapper = styled.div`
+  position: relative;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Wrapper>
         <Header />
-        <main style={{minHeight: '55vh'}}>
+        
         <Router>
           <BaseRouter />
         </Router>
-        </main>
+        
         <Footer />
-      </div>
+      </Wrapper>
     );
   }
 }

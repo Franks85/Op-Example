@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import Home from './containers/Home/Home'
 
 const BaseRouter = () => (
-  <div style={{height: '100%'}}>
+  <div>
     <Route exact path="/" component={Home} />
   </div>
 );

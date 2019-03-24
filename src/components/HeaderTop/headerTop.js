@@ -20,21 +20,21 @@ const headerTop = props => {
     <Container fluid>
       <Row>
         <Col sm="4" lg="4">
-          <a href='/'>
-          <Logo bgUrl={logo} />
+          <a href="/">
+            <Logo bgUrl={logo} />
           </a>
         </Col>
         {props.city && (
           <Col sm="8" lg={{ size: 4, offset: 4 }}>
             <Row className="d-flex align-items-center no-gutters justify-content-center right-content">
-              <Col xs="7" md='8'>
+              <Col xs="7" md="8">
                 <h2 className="right-content-title">
                   <a href="/senigallia" className="text-secondary">
                     {props.title}
                   </a>
                 </h2>
               </Col>
-              <Col xs="5" md='4'>
+              <Col xs="5" md="4">
                 <ImgRight bgUrl={imgRight} />
               </Col>
             </Row>

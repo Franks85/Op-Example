@@ -32,7 +32,7 @@ export default class Navigation extends React.Component {
     const navRight = navLinkRight.map(i => {
       return (
         <NavItem className="nav-link-right" key={i.title}>
-          <NavLink href="/login">Area S.A.</NavLink>
+          <NavLink href={i.href}>{i.title}</NavLink>
         </NavItem>
       );
     });
