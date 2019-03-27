@@ -1,11 +1,12 @@
+import React from "react";
 import { euroFormat } from "../../../Util/helpFunction/tableColumnFormatter";
-
+import Link from "../../../UI/link/tableLink";
 // lotti - Richest table
 
 export const richest = [
   {
     id: 1,
-    name: "APPALTO PULIZIA ARENILE DEMANIALE E MANUTENZIO...",
+    name: <Link>APPALTO PULIZIA ARENILE DEMANIALE E MANUTENZIO...</Link>,
     amount: 3441765,
     payed: 5027315,
     start: "01/01/2015",
@@ -13,7 +14,7 @@ export const richest = [
   },
   {
     id: 2,
-    name: "Appalto servizio refezione scolastica - determ...",
+    name: <Link>Appalto servizio refezione scolastica - determ...</Link>,
     amount: 3109425,
     payed: 1355245,
     start: "01/09/2016",
@@ -21,7 +22,7 @@ export const richest = [
   },
   {
     id: 3,
-    name: "PROCEDURA APERTA PER L'AFFIDAMENTO DELLA GESTI..",
+    name: <Link>PROCEDURA APERTA PER L'AFFIDAMENTO DELLA GESTI..</Link>,
     amount: 2840070,
     payed: 1562309,
     start: "01/09/2017",
@@ -29,7 +30,7 @@ export const richest = [
   },
   {
     id: 4,
-    name: "FORNITURA ORDINARIA FARMACI, PARAFARMACI E ALT...",
+    name: <Link>FORNITURA ORDINARIA FARMACI, PARAFARMACI E ALT...</Link>,
     amount: 2400000,
     payed: 2644586,
     start: "01/09/2015",
@@ -37,7 +38,7 @@ export const richest = [
   },
   {
     id: 5,
-    name: "PROCEDURA APERTA ART.60 DEL D.LGS N.50/2016 PE...",
+    name: <Link>PROCEDURA APERTA ART.60 DEL D.LGS N.50/2016 PE...</Link>,
     amount: 1932913,
     payed: 271779,
     start: "01/02/2017",
@@ -80,31 +81,31 @@ export const richestColumns = [
 export const waitingStart = [
   {
     id: 1,
-    name: "Rinnovo canoni di manutenzione software",
+    name: <Link>Rinnovo canoni di manutenzione software</Link>,
     amount: 32181,
     year: "2016"
   },
   {
     id: 2,
-    name: "Rinnovo canoni di manutenzione",
+    name: <Link>Rinnovo canoni di manutenzione</Link>,
     amount: 22985,
     year: "2016"
   },
   {
     id: 3,
-    name: "Acquisto n.2 server",
+    name: <Link>Acquisto n.2 server</Link>,
     amount: 22883,
     year: "2016"
   },
   {
     id: 4,
-    name: "AFFIDAMENTO DI SERVIZI TECNICI PROFESSIONALI RE...",
+    name: <Link>AFFIDAMENTO DI SERVIZI TECNICI PROFESSIONALI RE...</Link>,
     amount: 20685,
     year: "2018"
   },
   {
     id: 5,
-    name: "Rinnovo canoni di manutenzione software",
+    name: <Link>Rinnovo canoni di manutenzione software</Link>,
     amount: 18370,
     year: "2016"
   }
@@ -136,31 +137,31 @@ export const waitingStartColumns = [
 export const notCompleted = [
   {
     id: 1,
-    name: "NOLEGGIO TERMINALI MOBILI",
+    name: <Link>NOLEGGIO TERMINALI MOBILI</Link>,
     amount: 32,
     dateStart: "17/12/2012"
   },
   {
     id: 2,
-    name: "SPESA PER SERVIZIO DI NOTIFICA ATTI DA INFRAZIO...",
+    name: <Link>SPESA PER SERVIZIO DI NOTIFICA ATTI DA INFRAZIO...</Link>,
     amount: 8450,
     dateStart: "25/01/2013"
   },
   {
     id: 3,
-    name: "SPESA PER PONTE RADIO E BANCHE DATI ACI-PRA E M...",
+    name: <Link>SPESA PER PONTE RADIO E BANCHE DATI ACI-PRA E M...</Link>,
     amount: 10000,
     dateStart: "05/02/2013"
   },
   {
     id: 4,
-    name: "IMPEGNO DI SPESA PER MONITORAGGI DEI CAMPI MAGN...",
+    name: <Link>IMPEGNO DI SPESA PER MONITORAGGI DEI CAMPI MAGN...</Link>,
     amount: 12397,
     dateStart: "08/03/2013"
   },
   {
     id: 5,
-    name: "MANUTENZIONE PARCOMETRI",
+    name: <Link>MANUTENZIONE PARCOMETRI</Link>,
     amount: 2459,
     dateStart: "09/04/2013"
   }
@@ -192,17 +193,17 @@ export const notCompletedColumns = [
 export const statusPie = [
   {
     id: 1,
-    name: 'Completed',
+    name: "Completed",
     value: 794
   },
   {
     id: 2,
-    name: 'Waiting to start',
+    name: "Waiting to start",
     value: 115
   },
   {
     id: 3,
-    name: 'Not completed',
+    name: "Not completed",
     value: 91
   }
 ];

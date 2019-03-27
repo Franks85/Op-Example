@@ -5,7 +5,7 @@ const Icon = styled.div`
   width: 4.5rem;
   height: 2.8rem;
   position: relative;
-  background-color: ${props => props.link ? "#2dbfbe" : props.text ? "#c3bb5e" : props.bg};
+  background-color: ${props => props.link ? "#2dbfbe" : props.text ? "#fad548" : props.bg};
   border-radius: 5px;
   text-align: center;
   &:before {

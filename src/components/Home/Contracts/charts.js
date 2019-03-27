@@ -4,9 +4,9 @@ import PieChart from "../../../UI/charts/pieChart";
 import { statusPie } from "./data";
 
 const COLORS = [
-  "#0088FE",
-  "#00C49F",
-  "#FFBB28",
+  "#2dbfbe",
+  "#0088FE",  
+  "#fad548",
 ];
 
 export const statusChart = (
