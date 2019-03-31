@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-import Layout from "../../../components/Home/Layout/mainLayout";
+import Layout from "../../../../components/City/Home/Layout/mainLayout";
 import {
   contractsAmountTable,
   waitingStartTable,
   notCompletedTable
-} from "../../../components/Home/Contracts/tables";
-import { statusChart } from "../../../components/Home/Contracts/charts";
+} from "../../../../components/City/Home/Contracts/tables";
+import { statusChart } from "../../../../components/City/Home/Contracts/charts";
 
 const Section = styled.div`
   padding-top: 3rem;

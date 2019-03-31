@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "../../../UI/table/table";
+import Table from "../../../../UI/table/table";
 import { contractsWin, contractsColumns, amount, amountColumns, successRate, successRateColumns } from "./data";
 
 export const awardedTable = (

@@ -1,5 +1,5 @@
 import React from "react";
-import Table from "../../../UI/table/table";
+import Table from "../../../../UI/table/table";
 import { richest, richestColumns, waitingStart, waitingStartColumns,
 notCompleted, notCompletedColumns } from "./data";
 

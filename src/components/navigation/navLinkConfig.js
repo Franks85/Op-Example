@@ -1,4 +1,6 @@
-export const navLinkLeft = [
+// City
+
+export const cityNavLinkLeft = [
   {
     title: "About us",
     href: "/about"
@@ -17,9 +19,41 @@ export const navLinkLeft = [
   }
 ];
 
-export const navLinkRight = [
+export const cityNavLinkRight = [
   {
     title: "S.A. Login",
+    href: "/login"
+  }
+];
+
+// Company
+
+export const companyNavLinkLeft = [
+  {
+    title: "Fornitori",
+    href: "/suppliers"
+  },
+  {
+    title: "Lotti",
+    href: "/contracts"
+  },
+  {
+    title: "Comunicazioni",
+    href: "/publications"
+  },
+  {
+    title: "Categorie",
+    href: "/category"
+  }
+];
+
+export const companyNavLinkRight = [
+  {
+    title: "Area Fornitori",
+    href: "/suppliers/add"
+  },
+  {
+    title: "Area S.A.",
     href: "/login"
   }
 ];

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CountIcon from "./countIcon";
-import { media } from "../../../Util/StyledComponent/mediaQueryHelper";
+import { media } from "../../../../Util/StyledComponent/mediaQueryHelper";
 
 const Wrapper = styled.div`
   display: flex;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Cell } from "recharts";
-import BarChart from "../../../UI/charts/barChart";
-import PieChart from "../../../UI/charts/pieChart";
+import BarChart from "../../../../UI/charts/barChart";
+import PieChart from "../../../../UI/charts/pieChart";
 import { contractsWin, amountPie } from "./data";
 
 const COLORS = [

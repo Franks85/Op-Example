@@ -8,7 +8,12 @@ import {
   NavLink
 } from "reactstrap";
 
-import { navLinkLeft, navLinkRight } from "./navLinkConfig";
+import {
+  cityNavLinkLeft,
+  cityNavLinkRight,
+  companyNavLinkLeft,
+  companyNavLinkRight
+} from "./navLinkConfig";
 
 import "./navbar.css";
 
@@ -22,29 +27,50 @@ export default class Navigation extends React.Component {
     });
   };
   render() {
-    const navLeft = navLinkLeft.map(i => {
+    const cityNavLeft = cityNavLinkLeft.map(i => {
       return (
         <NavItem key={i.title}>
           <NavLink href={i.href}>{i.title}</NavLink>
         </NavItem>
       );
     });
-    const navRight = navLinkRight.map(i => {
+    const cityNavRight = cityNavLinkRight.map(i => {
       return (
         <NavItem className="nav-link-right" key={i.title}>
           <NavLink href={i.href}>{i.title}</NavLink>
         </NavItem>
       );
     });
-    const { rightLink } = this.props;
+    const companyNavLeft = companyNavLinkLeft.map(i => {
+      return (
+        <NavItem key={i.title}>
+          <NavLink href={i.href}>{i.title}</NavLink>
+        </NavItem>
+      );
+    });
+    const companyNavRight = companyNavLinkRight.map(i => {
+      return (
+        <NavItem className="nav-link-right" key={i.title}>
+          <NavLink href={i.href}>{i.title}</NavLink>
+        </NavItem>
+      );
+    });
+    const { city, company, rightLink } = this.props;
     return (
       <div style={{ marginTop: ".7rem" }}>
         <Navbar light expand="md">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav navbar>{navLeft}</Nav>
+            <Nav navbar>
+              {city && cityNavLeft}
+              {company && companyNavLeft}
+            </Nav>
           </Collapse>
-          {rightLink && navRight}
+          {rightLink && city
+            ? cityNavRight
+            : rightLink && company
+            ? companyNavRight
+            : null}
         </Navbar>
       </div>
     );

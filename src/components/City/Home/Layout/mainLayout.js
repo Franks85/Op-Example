@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import { Row, Col } from "reactstrap";
-import { media } from "../../../Util/StyledComponent/mediaQueryHelper";
-import LinkButton from "../../../UI/button/linkButton";
+import { media } from "../../../../Util/StyledComponent/mediaQueryHelper";
+import LinkButton from "../../../../UI/button/linkButton";
 
 const Wrapper = styled.div`
   background-color: ${props => props.bg};

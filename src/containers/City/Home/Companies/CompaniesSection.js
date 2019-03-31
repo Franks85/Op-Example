@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-import Layout from "../../../components/Home/Layout/mainLayout";
+import Layout from "../../../../components/City/Home/Layout/mainLayout";
 import {
   awardedChart,
   amountChart
-} from "../../../components/Home/Companies/charts";
+} from "../../../../components/City/Home/Companies/charts";
 import {
   awardedTable,
   amountTable,
   successRateTable
-} from "../../../components/Home/Companies/tables";
+} from "../../../../components/City/Home/Companies/tables";
 
 const Section = styled.div`
   padding-top: 2rem;

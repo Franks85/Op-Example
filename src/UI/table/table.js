@@ -10,7 +10,6 @@ const table = props => {
       data={data}
       columns={columns}
       striped
-      bootstrap4
     />
   );
 };

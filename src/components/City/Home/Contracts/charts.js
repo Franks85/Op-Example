@@ -1,6 +1,6 @@
 import React from "react";
 import { Cell } from "recharts";
-import PieChart from "../../../UI/charts/pieChart";
+import PieChart from "../../../../UI/charts/pieChart";
 import { statusPie } from "./data";
 
 const COLORS = [

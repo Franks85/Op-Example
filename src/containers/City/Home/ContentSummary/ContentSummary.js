@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Row, Col, Container } from "reactstrap";
-import whatOp from "../../../Util/img/what_openappalti.jpg";
-import CountBox from "../../../components/Home/ContentSummary/countBox";
+import whatOp from "../../../../Util/img/what_openappalti.jpg";
+import CountBox from "../../../../components/City/Home/ContentSummary/countBox";
 
 const WhatImgBox = styled.div`
   background: url('${props => props.bgUrl}') no-repeat left/contain;

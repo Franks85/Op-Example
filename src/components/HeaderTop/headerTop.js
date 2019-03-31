@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Row, Col, Container } from "reactstrap";
-import logo from "../../Util/img/openappalti-logo.png";
-import imgRight from "../../Util/img/Senigallia-Stemma.png";
+import OAlogo from "../../Util/img/openappalti-logo.png";
 import "./headerTop.css";
 
 const Logo = styled.div`
@@ -16,26 +15,27 @@ const ImgRight = styled.div`
 `;
 
 const headerTop = props => {
+  const {rightContent, title, logoRight} = props;
   return (
     <Container fluid>
       <Row>
         <Col sm="4" lg="4">
           <a href="/">
-            <Logo bgUrl={logo} />
+            <Logo bgUrl={OAlogo} />
           </a>
         </Col>
-        {props.city && (
+        {rightContent && (
           <Col sm="8" lg={{ size: 4, offset: 4 }}>
             <Row className="d-flex align-items-center no-gutters justify-content-center right-content">
               <Col xs="7" md="8">
                 <h2 className="right-content-title">
                   <a href="/senigallia" className="text-secondary">
-                    {props.title}
+                    {title}
                   </a>
                 </h2>
               </Col>
               <Col xs="5" md="4">
-                <ImgRight bgUrl={imgRight} />
+                <ImgRight bgUrl={logoRight} />
               </Col>
             </Row>
           </Col>

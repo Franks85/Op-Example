@@ -9,9 +9,9 @@ const Link = styled.a`
 `;
 
 const tableLink = props => {
-    const {children} = props;
+    const {children, href} = props;
   return (
-    <Link href='/'>
+    <Link href={href}>
         {children}
     </Link>
 )
