@@ -1,0 +1,10 @@
+.search-input {
+     margin: .5rem 1.5rem .5rem 0;
+}
+
+.search-label {
+    color: #838383;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}

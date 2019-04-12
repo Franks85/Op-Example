@@ -1,3 +1,32 @@
 html, body {
     height: 100%;
 }
+
+.text-primary {
+    color: #2dbfbe !important;
+}
+
+.btn-primary {
+    background-color: #2dbfbe;
+    border-color: #2dbfbe;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2dbfbeb3;
+    border-color: #2dbfbeb3;
+}
+
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #2dbfbeb3;
+    border-color: #2dbfbeb3;
+}
+
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(169, 243, 239, 0.5);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(38, 248, 255, 0.5);
+}
