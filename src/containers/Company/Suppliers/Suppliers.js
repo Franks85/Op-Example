@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Layout from "../../../components/Company/Suppliers/Layout/layout";
-import Main from './SuppliersSearch/SuppliersSearch'
+import Main from './Main/SuppliersSearch/SuppliersSearch'
+import Aside from './Aside/Aside'
 
 const Wrapper = styled.div`
   padding: 2rem 1rem;
@@ -12,7 +13,7 @@ class Suppliers extends Component {
     
     return (
       <Wrapper>
-        <Layout main={<Main />}/>
+        <Layout main={<Main />} aside={<Aside />}/>
       </Wrapper>
     );
   }

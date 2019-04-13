@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import SupplierDetail from "../../../../components/Company/Suppliers/supplierDetail/supplierDetail";
+import SupplierDetail from "../../../../../components/Company/Suppliers/main/supplierDetail/supplierDetail";
 
 class SuppliersList extends Component {
   render() {

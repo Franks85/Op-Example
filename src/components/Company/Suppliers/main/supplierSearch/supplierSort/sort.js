@@ -28,6 +28,7 @@ const dropDown = props => {
 
   return (
     <SortBox>
+    <h2 className='text-primary'>Ordinamento</h2>
       <div className="dropdown">
         <button
           className="btn btn-primary dropdown-toggle"

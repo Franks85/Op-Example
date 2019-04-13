@@ -1,6 +1,6 @@
 import React from "react";
-import CheckBox from "../../../../../UI/form/checkboxes";
-import SubmitButton from "../../../../../UI/button/submitButton";
+import CheckBox from "../../../../../../UI/form/checkboxes";
+import SubmitButton from "../../../../../../UI/button/submitButton";
 import { nationality, categoryType } from "./optionData";
 
 const supplierfilter = props => {

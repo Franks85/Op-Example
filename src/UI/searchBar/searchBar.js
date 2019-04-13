@@ -5,7 +5,7 @@ import './searchBar.css'
 const searchBar = props => {
   const { label, placeholder } = props;
   return (
-    <Form inline>
+    <Form>
       <FormGroup>
         <Label for="exampleSearch" className='search-label'>{label}</Label>
       </FormGroup>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Row, Col } from "reactstrap";
-import Link from "../../../../UI/link/link";
+import Link from "../../../../../UI/link/link";
 
 const Wrapper = styled.div`
   border-top: 1px solid #ccc;

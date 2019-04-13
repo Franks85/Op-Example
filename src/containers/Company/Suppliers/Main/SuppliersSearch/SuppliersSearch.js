@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Row, Col, Container } from "reactstrap";
 import _ from "lodash";
-import SortDropdown from "../../../../components/Company/Suppliers/supplierSearch/supplierSort/sort";
+import SortDropdown from "../../../../../components/Company/Suppliers/main/supplierSearch/supplierSort/sort";
 import SuppliersList from "../SuppliersList/SuppliersList";
-import { supplier } from "../../../../components/Company/Suppliers/supplierData";
-import SupplierFilter from "../../../../components/Company/Suppliers/supplierSearch/supplierFilter/supplierFilter";
+import { supplier } from "../../../../../components/Company/Suppliers/main/supplierData";
+import SupplierFilter from "../../../../../components/Company/Suppliers/main/supplierSearch/supplierFilter/supplierFilter";
 
 class Search extends Component {
   state = {
@@ -47,7 +47,7 @@ class Search extends Component {
           <Col lg={4} sm={6} className='mt-2'>
             <SupplierFilter submit={this.onFilter} />
           </Col>
-          <Col lg={4} sm={6} className='mt-3'>
+          <Col lg={{size: 4, offset: 1}} sm={6} className='mt-2'>
             <SortDropdown
               doOrderBy={this.doOrderBy}
               doOrder={this.doOrder}
