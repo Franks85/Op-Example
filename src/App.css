@@ -30,3 +30,7 @@ html, body {
 .btn-primary:focus {
     box-shadow: 0 0 0 .2rem rgba(38, 248, 255, 0.5);
 }
+
+.jumbotron {
+    background-color: #f6f6f6;
+}
