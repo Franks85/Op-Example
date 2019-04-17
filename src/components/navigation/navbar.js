@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkContainer } from 'react-router-bootstrap' 
+import { LinkContainer } from "react-router-bootstrap";
 import {
   Collapse,
   Navbar,
@@ -30,32 +30,38 @@ export default class Navigation extends React.Component {
   render() {
     const cityNavLeft = cityNavLinkLeft.map(i => {
       return (
-        <NavItem key={i.title}>
-          <NavLink href={i.href}>{i.title}</NavLink>
-        </NavItem>
+        <LinkContainer to={i.href}>
+          <NavItem key={i.title}>
+            <NavLink href={i.href}>{i.title}</NavLink>
+          </NavItem>
+        </LinkContainer>
       );
     });
     const cityNavRight = cityNavLinkRight.map(i => {
       return (
-        <NavItem className="nav-link-right" key={i.title}>
-          <NavLink href={i.href}>{i.title}</NavLink>
-        </NavItem>
+        <LinkContainer to={i.href}>
+          <NavItem className="nav-link-right" key={i.title}>
+            <NavLink href={i.href}>{i.title}</NavLink>
+          </NavItem>
+        </LinkContainer>
       );
     });
     const companyNavLeft = companyNavLinkLeft.map(i => {
       return (
         <LinkContainer to={i.href}>
-        <NavItem key={i.title}>
-          <NavLink href={i.href}>{i.title}</NavLink>
-        </NavItem>
+          <NavItem key={i.title}>
+            <NavLink href={i.href}>{i.title}</NavLink>
+          </NavItem>
         </LinkContainer>
       );
     });
     const companyNavRight = companyNavLinkRight.map(i => {
       return (
-        <NavItem className="nav-link-right" key={i.title}>
-          <NavLink href={i.href}>{i.title}</NavLink>
-        </NavItem>
+        <LinkContainer to={i.href}>
+          <NavItem className="nav-link-right" key={i.title}>
+            <NavLink href={i.href}>{i.title}</NavLink>
+          </NavItem>
+        </LinkContainer>
       );
     });
     const { city, company, rightLink } = this.props;
