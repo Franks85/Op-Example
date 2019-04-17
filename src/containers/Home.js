@@ -9,9 +9,14 @@ import CompanyInfo from "../components/Company/Home/companyInfo";
 const MainContent = styled.div``;
 class Home extends Component {
   render() {
-    const { city, company } = this.props;
+    const { base, city, company } = this.props;
     return (
       <Fragment>
+        {base && (
+          <MainContent>
+            
+          </MainContent>
+        )}
         {city && (
           <MainContent>
             <ContentSummary />

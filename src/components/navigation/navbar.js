@@ -13,7 +13,9 @@ import {
   cityNavLinkLeft,
   cityNavLinkRight,
   companyNavLinkLeft,
-  companyNavLinkRight
+  companyNavLinkRight,
+  baseNavLinkLeft,
+  baseNavLinkRight
 } from "./navLinkConfig";
 
 import "./navbar.css";
@@ -28,6 +30,24 @@ export default class Navigation extends React.Component {
     });
   };
   render() {
+    const baseNavLeft = baseNavLinkLeft.map(i => {
+      return (
+        <LinkContainer to={i.href}>
+          <NavItem key={i.title}>
+            <NavLink href={i.href}>{i.title}</NavLink>
+          </NavItem>
+        </LinkContainer>
+      );
+    });
+    const baseNavRight = baseNavLinkRight.map(i => {
+      return (
+        <LinkContainer to={i.href}>
+          <NavItem className="nav-link-right" key={i.title}>
+            <NavLink href={i.href}>{i.title}</NavLink>
+          </NavItem>
+        </LinkContainer>
+      );
+    });
     const cityNavLeft = cityNavLinkLeft.map(i => {
       return (
         <LinkContainer to={i.href}>
@@ -64,13 +84,14 @@ export default class Navigation extends React.Component {
         </LinkContainer>
       );
     });
-    const { city, company, rightLink } = this.props;
+    const { base, city, company, rightLink } = this.props;
     return (
       <div style={{ marginTop: ".7rem" }}>
         <Navbar light expand="md">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
+              {base && baseNavLeft}
               {city && cityNavLeft}
               {company && companyNavLeft}
             </Nav>
@@ -79,6 +100,8 @@ export default class Navigation extends React.Component {
             ? cityNavRight
             : rightLink && company
             ? companyNavRight
+            : rightLink && base
+            ? baseNavRight
             : null}
         </Navbar>
       </div>

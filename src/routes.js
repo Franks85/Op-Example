@@ -6,9 +6,9 @@ import OAservice from './containers/Base/OAservice/main'
 
 const BaseRouter = () => (
   <div>
-    <Route exact path="/" render={(props) => <Home {...props} city={false} company={true} />}  />
+    <Route exact path="/" render={(props) => <Home {...props} base={true} />}  />
     <Route path="/suppliers" render={(props) => <Suppliers {...props} />}  />
-    <Route path="/service" render={(props) => <OAservice {...props} />}  />
+    <Route path="/service/openappalti" render={(props) => <OAservice {...props} />}  />
   </div>
 );
 

@@ -10,8 +10,8 @@ class Header extends Component {
 render () {
   return (
     <Wrapper>
-      <HeaderTop title={headerRight.title} logoRight={headerRight.logo} rightContent/>
-      <Navbar company rightLink/>
+      <HeaderTop/>
+      <Navbar base rightLink/>
     </Wrapper>
    )
   }
