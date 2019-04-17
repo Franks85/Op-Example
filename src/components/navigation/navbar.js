@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap' 
 import {
   Collapse,
   Navbar,
@@ -44,9 +44,11 @@ export default class Navigation extends React.Component {
     });
     const companyNavLeft = companyNavLinkLeft.map(i => {
       return (
+        <LinkContainer to={i.href}>
         <NavItem key={i.title}>
           <NavLink href={i.href}>{i.title}</NavLink>
         </NavItem>
+        </LinkContainer>
       );
     });
     const companyNavRight = companyNavLinkRight.map(i => {
