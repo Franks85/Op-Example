@@ -32,8 +32,8 @@ export default class Navigation extends React.Component {
   render() {
     const baseNavLeft = baseNavLinkLeft.map(i => {
       return (
-        <LinkContainer to={i.href}>
-          <NavItem key={i.title}>
+        <LinkContainer to={i.href} key={i.title}>
+          <NavItem >
             <NavLink href={i.href}>{i.title}</NavLink>
           </NavItem>
         </LinkContainer>
@@ -41,8 +41,8 @@ export default class Navigation extends React.Component {
     });
     const baseNavRight = baseNavLinkRight.map(i => {
       return (
-        <LinkContainer to={i.href}>
-          <NavItem className="nav-link-right" key={i.title}>
+        <LinkContainer to={i.href} key={i.title}>
+          <NavItem className="nav-link-right" >
             <NavLink href={i.href}>{i.title}</NavLink>
           </NavItem>
         </LinkContainer>
@@ -50,8 +50,8 @@ export default class Navigation extends React.Component {
     });
     const cityNavLeft = cityNavLinkLeft.map(i => {
       return (
-        <LinkContainer to={i.href}>
-          <NavItem key={i.title}>
+        <LinkContainer to={i.href} key={i.title}>
+          <NavItem >
             <NavLink href={i.href}>{i.title}</NavLink>
           </NavItem>
         </LinkContainer>
@@ -59,8 +59,8 @@ export default class Navigation extends React.Component {
     });
     const cityNavRight = cityNavLinkRight.map(i => {
       return (
-        <LinkContainer to={i.href}>
-          <NavItem className="nav-link-right" key={i.title}>
+        <LinkContainer to={i.href} key={i.title}>
+          <NavItem className="nav-link-right" >
             <NavLink href={i.href}>{i.title}</NavLink>
           </NavItem>
         </LinkContainer>
@@ -68,8 +68,8 @@ export default class Navigation extends React.Component {
     });
     const companyNavLeft = companyNavLinkLeft.map(i => {
       return (
-        <LinkContainer to={i.href}>
-          <NavItem key={i.title}>
+        <LinkContainer to={i.href} key={i.title}>
+          <NavItem >
             <NavLink href={i.href}>{i.title}</NavLink>
           </NavItem>
         </LinkContainer>
@@ -77,8 +77,8 @@ export default class Navigation extends React.Component {
     });
     const companyNavRight = companyNavLinkRight.map(i => {
       return (
-        <LinkContainer to={i.href}>
-          <NavItem className="nav-link-right" key={i.title}>
+        <LinkContainer to={i.href} key={i.title}>
+          <NavItem className="nav-link-right" >
             <NavLink href={i.href}>{i.title}</NavLink>
           </NavItem>
         </LinkContainer>

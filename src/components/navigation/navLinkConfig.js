@@ -1,16 +1,18 @@
 // Base 
 
+
+
 export const baseNavLinkLeft = [
   {
-    title: "About us",
-    href: "/about"
+    title: 'About us',
+    href:  '/about',
   },
   {
     title: "Open Appalti",
     href: "/service/openappalti"
   },
   {
-    title: "Contracts",
+    title: "Albo Fornitori",
     href: "/service/albofornitori"
   }
 ];

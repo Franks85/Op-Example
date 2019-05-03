@@ -6,7 +6,7 @@ import Prices from '../../../components/Base/OAservice/prices/prices'
 import PlusPrices from '../../../components/Base/OAservice/prices/plusPrices'
 import EndLinks from '../../../components/Base/OAservice/endLinks/endLinks'
 
-class ComponentName extends Component {
+class OAservice extends Component {
 render () {
   return (
     <Container>
@@ -21,4 +21,4 @@ render () {
   }
  }
 
-export default ComponentName
+export default OAservice

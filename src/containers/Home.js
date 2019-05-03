@@ -5,6 +5,7 @@ import { Container } from "reactstrap";
 import Companies from "./City/Home/Companies/CompaniesSection";
 import Contracts from "./City/Home/Contracts/ContractsSection";
 import CompanyInfo from "../components/Company/Home/companyInfo";
+import Main from '../components/Base/Home/main'
 
 const MainContent = styled.div``;
 class Home extends Component {
@@ -14,7 +15,7 @@ class Home extends Component {
       <Fragment>
         {base && (
           <MainContent>
-            
+            <Main />
           </MainContent>
         )}
         {city && (
