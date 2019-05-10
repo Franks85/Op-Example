@@ -18,7 +18,7 @@ const Text = styled.span`
 const groupList = props => {
   const { data } = props;
   const el = data.map(i => (
-    <li key={i.id} className='p-1'>
+    <li key={i.text} className='p-1'>
       <Icon className="fas fa-check" />
       <Text>{i.text}</Text>
     </li>
