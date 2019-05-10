@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Navbar from '../../components/navigation/navbar'
 import HeaderTop from '../../components/HeaderTop/headerTop'
-import { headerRight } from './headerConfig'
 
 const Wrapper = styled.div`
 `

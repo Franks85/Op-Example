@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Col } from "reactstrap";
 
 const Link = styled.a`
-  color: #2dbfbe;
   &:hover {
     text-decoration: none;
     color: #c3bb5e;

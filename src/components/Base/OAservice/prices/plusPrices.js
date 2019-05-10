@@ -7,6 +7,8 @@ import "./plusPrices.css";
 
 const Wrapper = styled.div``;
 
+
+
 const plusPrices = () => {
   const link = tabLink.map(i => (
     <li className="nav-item" key={i.id}>
@@ -23,6 +25,7 @@ const plusPrices = () => {
       </a>
     </li>
   ));
+
   return (
     <Wrapper className="mt-5">
       <SectionHeader title="Costo Servizi Aggiuntivi" subtitle="" />

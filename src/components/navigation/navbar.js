@@ -18,8 +18,6 @@ import {
   baseNavLinkRight
 } from "./navLinkConfig";
 
-import "./navbar.css";
-
 export default class Navigation extends React.Component {
   state = {
     isOpen: false

@@ -1,15 +1,21 @@
 export const feature1 = [
-  "Il software è fruibile semplicemente con l'ausilio di un browser (Firefox, Internet Explorer, Chrome,..)",
-  "Numero illimitato di record ed utenti",
-  "Gestione gruppi di utenti",
-  "Tracciamento delle attività svolte da ciascun utente",
-  "Importazione dati da tracciati xls o csv, e generazione di dataset XML"
+  {
+    text:
+      "Il software è fruibile semplicemente con l'ausilio di un browser (Firefox, Internet Explorer, Chrome,..)"
+  },
+  { text: "Numero illimitato di record ed utenti" },
+  { text: "Gestione gruppi di utenti" },
+  { text: "Tracciamento delle attività svolte da ciascun utente" },
+  {
+    text:
+      "Importazione dati da tracciati xls o csv, e generazione di dataset XML"
+  }
 ];
 
 export const feature2 = [
-  "Storico dei dataset",
-  "Repository dei dataset XML",
-  "Generazione delle comunicazione verso AVCP",
-  "Comunicazione delle scadenze mediante email",
-  "Supporto e guida in linea"
+  { text: "Storico dei dataset" },
+  { text: "Repository dei dataset XML" },
+  { text: "Generazione delle comunicazione verso AVCP" },
+  { text: "Comunicazione delle scadenze mediante email" },
+  { text: "Supporto e guida in linea" }
 ];

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Row, Col } from "reactstrap";
-import './linkButton.css'
 
 const Link = styled.a`
     letter-spacing: .1rem;
