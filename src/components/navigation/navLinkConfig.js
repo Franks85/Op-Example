@@ -9,11 +9,11 @@ export const baseNavLinkLeft = [
   },
   {
     title: "Open Appalti",
-    href: "/service/openappalti"
+    href: "/servizi/openappalti"
   },
   {
     title: "Albo Fornitori",
-    href: "/service/albofornitori"
+    href: "/servizi/albofornitori"
   }
 ];
 

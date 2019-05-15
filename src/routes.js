@@ -11,13 +11,13 @@ const BaseRouter = () => (
     <Switch>
       <Route exact path="/" render={props => <Home {...props} base={true} />} />
       <Route path="/about" render={props => <About {...props} />} />
-      <Route path="/suppliers" render={props => <Suppliers {...props} />} />
+      <Route path="/fornitori" render={props => <Suppliers {...props} />} />
       <Route
-        path="/service/openappalti"
+        path="/servizi/openappalti"
         render={props => <OAservice {...props} />}
       />
       <Route
-        path="/service/albofornitori"
+        path="/servizi/albofornitori"
         render={props => <AFservice {...props} />}
       />
     </Switch>
